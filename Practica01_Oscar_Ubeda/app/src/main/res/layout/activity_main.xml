@@ -9,6 +9,15 @@
     tools:context=".MainActivity" >
 
     <ImageView
+        android:id="@+id/imageViewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle_white_top" />
+
+    <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +31,7 @@
         android:id="@+id/textPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hi Olivia Jhonson"
+        android:text="Hola Olivia Jhonson"
         android:textColor="#ffffff"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -35,7 +44,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Good Morning"
+        android:text="Buenos Días"
         android:textStyle="bold"
         android:textColor="#FEDD06"
         android:textSize="36sp"
@@ -44,6 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textPerfil" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
