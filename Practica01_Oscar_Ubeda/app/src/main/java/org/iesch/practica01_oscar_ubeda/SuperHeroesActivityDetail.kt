@@ -18,7 +18,7 @@ class SuperHeroesActivityDetail : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivitySuperHeroesDetailBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_super_heroes_detail)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.superHeroesDetail)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.superHeroesMain)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
