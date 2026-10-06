@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EdadCaninaActivity">
+    tools:context=".MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="24dp"
-        android:text="¿Que edad tienes?"
+        android:text="@string/pregunta_edad"
         android:textColor="@color/colorDogActivity"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -32,7 +32,7 @@
         android:layout_marginHorizontal="24dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="Introduze tu edad"
+        android:hint="@string/introduce_tu_edad"
         android:inputType="number" />
 
     <Button
@@ -42,7 +42,7 @@
         android:layout_marginHorizontal="24dp"
         android:layout_marginVertical="16dp"
         android:backgroundTint="@color/colorDogActivity"
-        android:text="Calcular Edad"
+        android:text="@string/calcular_edad"
         android:textSize="20sp" />
 
     <TextView
@@ -53,7 +53,7 @@
         tools:text="Si fueras un perro, tendías 47 años"
         android:textSize="26sp"
         android:gravity="center"
-        android:textColor="@color/textColorPrimary"
+        android:textColor="@color/colorDogActivity"
         android:textStyle="bold" />
 
 </LinearLayout>
