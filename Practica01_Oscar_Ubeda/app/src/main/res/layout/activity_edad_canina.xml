@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EdadCaninaActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perro"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/texto_pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="¿Que edad tienes?"
+        android:textColor="@color/colorDogActivity"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Introduze tu edad"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/boton_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="@color/colorDogActivity"
+        android:text="Calcular Edad"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/texto_respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        tools:text="Si fueras un perro, tendías 47 años"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:textColor="@color/textColorPrimary"
+        android:textStyle="bold" />
+
+</LinearLayout>

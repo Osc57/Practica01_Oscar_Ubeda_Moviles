@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Practica01_Oscar_Ubeda</string>
+    <string name="pregunta_edad">¿Que edad tienes?</string>
+    <string name="introduce_tu_edad">Introduce tu edad:</string>
+    <string name="calcular_edad">Calcular Edad</string>
+    <string name="resultado_texto">"Si fueras un perro, tu edad sería de %d años"</string>
+    <string name="texto_toast">"Has de introducir tu edad"</string>
 </resources>
