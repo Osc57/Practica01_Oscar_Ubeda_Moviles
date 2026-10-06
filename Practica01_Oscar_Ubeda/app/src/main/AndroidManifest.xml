@@ -30,7 +30,7 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".SuperHeroesActivity"
+            android:name=".SuperHeroesActivityMain"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

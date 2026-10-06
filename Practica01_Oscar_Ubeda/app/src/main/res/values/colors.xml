@@ -6,4 +6,5 @@
     <color name="colorBackground">#FFFFFF</color>
     <color name="textColorPrimary">#000000</color>
     <color name="colorDogActivity">#07A407</color>
+    <color name="colorYellowSuperHero">#FFEB3B</color>
 </resources>
