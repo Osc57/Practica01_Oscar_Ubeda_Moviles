@@ -12,10 +12,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import org.iesch.practica01_oscar_ubeda.Model.SuperHeroe
+import org.iesch.practica01_oscar_ubeda.databinding.ActivityMainBinding
+import org.iesch.practica01_oscar_ubeda.databinding.ActivitySuperHeroesMainBinding
 import java.io.File
+import kotlin.jvm.java
 
 class SuperHeroesActivityMain : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivitySuperHeroesMainBinding
 
     // 1 - Creamos una variable que va a manejar el resultado de haber hecho la foto
     private lateinit var heroImage: ImageView
@@ -38,14 +42,13 @@ class SuperHeroesActivityMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivitySuperHeroesMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.superHeroesMain)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         heroImage = binding.heroImage
         binding.heroImage.setOnClickListener {
             abrirCamara()
@@ -92,7 +95,7 @@ class SuperHeroesActivityMain : AppCompatActivity() {
 
     fun irADetailActivity(superHeroe: SuperHeroe) {
         // Creamos el objeto Intent
-        val intent = Intent(this, DetailActivity::class.java)
+        val intent = Intent(this, SuperHeroesActivityDetail::class.java)
         // Añadimos todos los campos con el metodo putExtra
         //intent.putExtra("superHeroName", superHeroName)
         //intent.putExtra("alterEgo", alterEgo)
