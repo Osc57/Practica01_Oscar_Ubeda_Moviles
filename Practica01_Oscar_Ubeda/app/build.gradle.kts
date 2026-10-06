@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    //id("kotlin-parcelize")
+    id("org.jetbrains.kotlin.plugin.parcelize")
 }
 
 android {
@@ -25,6 +27,11 @@ android {
             }
         }
     }
+
+    buildFeatures {
+        viewBinding = true // Opcional, si usas ViewBinding
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
