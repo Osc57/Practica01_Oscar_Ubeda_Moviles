@@ -9,6 +9,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputEditText
+import org.iesch.practica01_oscar_ubeda.Model.Usuario
 
 class LogInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,10 +29,11 @@ class LogInActivity : AppCompatActivity() {
             val password = findViewById<TextInputEditText>(R.id.editTextPassword).text.toString()
 
             if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
             } else {
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this, HomeActivity::class.java).apply {
+                    putExtra("usuario", email)
+                }
                 startActivity(intent)
                 finish()
             }

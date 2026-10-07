@@ -5,6 +5,7 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.Environment
+import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
@@ -13,12 +14,13 @@ import androidx.core.content.FileProvider
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import org.iesch.practica01_oscar_ubeda.Model.SuperHeroe
-import org.iesch.practica01_oscar_ubeda.databinding.ActivityMainBinding
+import org.iesch.practica01_oscar_ubeda.databinding.ActivitySuperHeroesDetailBinding
 import org.iesch.practica01_oscar_ubeda.databinding.ActivitySuperHeroesMainBinding
 import java.io.File
 import kotlin.jvm.java
 
 class SuperHeroesActivityMain : AppCompatActivity() {
+
     private lateinit var binding: ActivitySuperHeroesMainBinding
 
     // 1 - Creamos una variable que va a manejar el resultado de haber hecho la foto
@@ -39,16 +41,19 @@ class SuperHeroesActivityMain : AppCompatActivity() {
 
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivitySuperHeroesMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.superHeroesMain)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // 2
         heroImage = binding.heroImage
         binding.heroImage.setOnClickListener {
             abrirCamara()
@@ -64,6 +69,8 @@ class SuperHeroesActivityMain : AppCompatActivity() {
 
             irADetailActivity(superHeroe)
         }
+
+
     }
 
     fun abrirCamara() {
@@ -95,7 +102,7 @@ class SuperHeroesActivityMain : AppCompatActivity() {
 
     fun irADetailActivity(superHeroe: SuperHeroe) {
         // Creamos el objeto Intent
-        val intent = Intent(this, SuperHeroesActivityDetail::class.java)
+        val intent = Intent(this, ActivitySuperHeroesDetailBinding::class.java)
         // Añadimos todos los campos con el metodo putExtra
         //intent.putExtra("superHeroName", superHeroName)
         //intent.putExtra("alterEgo", alterEgo)
@@ -108,5 +115,6 @@ class SuperHeroesActivityMain : AppCompatActivity() {
         // Iniciamos la nueva actividad
         startActivity(intent)
     }
+
 
 }

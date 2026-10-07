@@ -8,17 +8,19 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import org.iesch.practica01_oscar_ubeda.Model.SuperHeroe
 import org.iesch.practica01_oscar_ubeda.databinding.ActivitySuperHeroesDetailBinding
-import org.iesch.practica01_oscar_ubeda.databinding.ActivitySuperHeroesMainBinding
+
+
 
 class SuperHeroesActivityDetail : AppCompatActivity() {
     private lateinit var binding: ActivitySuperHeroesDetailBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivitySuperHeroesDetailBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_super_heroes_detail)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.superHeroesMain)) { v, insets ->
+        setContentView(binding.root)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets

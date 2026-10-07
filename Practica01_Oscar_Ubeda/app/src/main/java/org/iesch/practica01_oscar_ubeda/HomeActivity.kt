@@ -19,6 +19,10 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
         enableEdgeToEdge()
 
+        val usuario = intent.getStringExtra("usuario") ?: "Invitado"
+
+        binding.textPerfil.text = "Hola $usuario"
+
         binding.constraintEdadCanina.setOnClickListener {
             val intent = Intent(this, EdadCaninaActivity::class.java)
             startActivity(intent)
