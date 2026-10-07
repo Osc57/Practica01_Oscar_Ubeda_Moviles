@@ -102,7 +102,7 @@ class SuperHeroesActivityMain : AppCompatActivity() {
 
     fun irADetailActivity(superHeroe: SuperHeroe) {
         // Creamos el objeto Intent
-        val intent = Intent(this, ActivitySuperHeroesDetailBinding::class.java)
+        val intent = Intent(this, SuperHeroesActivityDetail::class.java)
         // Añadimos todos los campos con el metodo putExtra
         //intent.putExtra("superHeroName", superHeroName)
         //intent.putExtra("alterEgo", alterEgo)
