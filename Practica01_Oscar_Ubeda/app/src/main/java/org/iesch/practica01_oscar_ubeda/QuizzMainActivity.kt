@@ -36,6 +36,10 @@ class QuizzMainActivity : AppCompatActivity() {
         // Cargar array de los strings de opcion B
         val opcionesB = resources.getStringArray(R.array.opciones_b)
 
+        val opcionesC = resources.getStringArray(R.array.opciones_c)
+
+        val opcionesD = resources.getStringArray(R.array.opciones_d)
+
         // Obtener enunciado
         val enunciado = binding.enunciadoPregunta
 
@@ -48,6 +52,8 @@ class QuizzMainActivity : AppCompatActivity() {
         // Obtener radioButtons
         val opcion1 = binding.opcion1
         val opcion2 = binding.opcion2
+        val opcion3 = binding.opcion3
+        val opcion4 = binding.opcion4
 
         // Apartado de Llenado
         enunciado.text = preguntas[indice]
@@ -62,6 +68,8 @@ class QuizzMainActivity : AppCompatActivity() {
         // RadioButtons
         opcion1.text = opcionesA[indice]
         opcion2.text = opcionesB[indice]
+        opcion3.text = opcionesC[indice]
+        opcion4.text = opcionesD[indice]
 
         // OnClickListener del boton
         binding.botonEnviar.setOnClickListener {

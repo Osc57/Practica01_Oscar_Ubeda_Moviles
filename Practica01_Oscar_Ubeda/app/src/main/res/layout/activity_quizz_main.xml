@@ -90,6 +90,28 @@
                 android:textColor="@color/textColorPrimary"
                 android:textSize="18sp"
                 tools:text="Opcion B" />
+            <RadioButton
+                android:id="@+id/opcion_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_opcion"
+                android:padding="16dp"
+                android:textColorLink="@color/textColorPrimary"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp"
+                tools:text="Opcion C" />
+            <RadioButton
+                android:id="@+id/opcion_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_opcion"
+                android:padding="16dp"
+                android:textColorLink="@color/textColorPrimary"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp"
+                tools:text="Opcion D" />
 
         </RadioGroup>
 

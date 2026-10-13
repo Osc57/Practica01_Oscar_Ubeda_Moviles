@@ -14,32 +14,56 @@
 
     <!-- Para los enunciados de las preguntas -->
     <string-array name="preguntas">
-        <item>¿Cuál es el verdadero nombre de Batman?</item>
-        <item>¿Qué ciudad protege Spider Man?</item>
-        <item>¿De qué metal están recubiertos los huesos de Wolverine?</item>
+        <item>Si tengo 2 manzanas y me roban 1 ¿Cuantas manzanas me quedan?</item>
+        <item>Si naces en España, ¿Que nacionalidad tienes?</item>
+        <item>177 / 50</item>
+        <item>Cual es este grado</item>
+        <item>Cuantas horas tiene un día</item>
     </string-array>
 
     <!-- Opciones de respuesta dependiendo de la pregunta -->
 
     <!-- Opciones a -->
     <string-array name="opciones_a">
-        <item>Clark Kent</item>
-        <item>Gotham</item>
-        <item>Adamantium</item>
+        <item>1</item>
+        <item>Marroqui</item>
+        <item>7</item>
+        <item>Chapa y pintura</item>
+        <item>25</item>
     </string-array>
 
     <!-- Opciones b -->
     <string-array name="opciones_b">
-        <item>Bruce Wayne</item>
-        <item>New York</item>
-        <item>Vibranium</item>
+        <item>2</item>
+        <item>Español</item>
+        <item>3,54</item>
+        <item>DAM</item>
+        <item>17</item>
+    </string-array>
+
+    <string-array name="opciones_c">
+        <item>Te las robo Jamal</item>
+        <item>Italiano</item>
+        <item>5,5</item>
+        <item>SMR</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="opciones_d">
+        <item>0</item>
+        <item>Frances</item>
+        <item>273</item>
+        <item>No lo se</item>
+        <item>32</item>
     </string-array>
 
     <!-- Respuestas correctas -->
     <string-array name="correctas">
-        <item>Bruce Wayne</item>
-        <item>New York</item>
-        <item>Adamantium</item>
+        <item>1</item>
+        <item>Español</item>
+        <item>3,54</item>
+        <item>DAM</item>
+        <item>24</item>
     </string-array>
 
     <!-- Apartado ActivityDialog (Pantalla 2)-->
