@@ -33,7 +33,6 @@
             android:name=".SuperHeroesActivityMain"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".SuperHeroesActivityDetail"
             android:exported="false" />
@@ -47,6 +46,16 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
+
+        <activity
+            android:name=".QuizzMainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".QuizzDetailActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

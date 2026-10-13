@@ -5,4 +5,56 @@
     <string name="calcular_edad">Calcular Edad</string>
     <string name="resultado_texto">"Si fueras un perro, tu edad sería de %d años"</string>
     <string name="texto_toast">"Has de introducir tu edad"</string>
+
+    <!-- Apartado del la activity QuizMain -->
+    <string name="titulo_app">Quizzes</string>
+    <string name="texto_boton_enviar">Send -></string>
+    <string name="mensaje_toast_no_respuesta">No se ha respondido la pregunta, no se puede pasar a la siguiente pantalla</string>
+    <string name="formato_progreso">%1$d / %2$d</string>
+
+    <!-- Para los enunciados de las preguntas -->
+    <string-array name="preguntas">
+        <item>¿Cuál es el verdadero nombre de Batman?</item>
+        <item>¿Qué ciudad protege Spider Man?</item>
+        <item>¿De qué metal están recubiertos los huesos de Wolverine?</item>
+    </string-array>
+
+    <!-- Opciones de respuesta dependiendo de la pregunta -->
+
+    <!-- Opciones a -->
+    <string-array name="opciones_a">
+        <item>Clark Kent</item>
+        <item>Gotham</item>
+        <item>Adamantium</item>
+    </string-array>
+
+    <!-- Opciones b -->
+    <string-array name="opciones_b">
+        <item>Bruce Wayne</item>
+        <item>New York</item>
+        <item>Vibranium</item>
+    </string-array>
+
+    <!-- Respuestas correctas -->
+    <string-array name="correctas">
+        <item>Bruce Wayne</item>
+        <item>New York</item>
+        <item>Adamantium</item>
+    </string-array>
+
+    <!-- Apartado ActivityDialog (Pantalla 2)-->
+
+    <!-- Textos para el boton del dialogo -->
+    <string name="texto_boton_siguiente">Next -></string>
+    <string name="texto_boton_comenzar_de_nuevo">Start again -></string>
+
+    <!-- Textos para el titulo debajo del icono y el subtitulo. Fraccionado por estados, y cada uno tiene su titlo y subtitulo -->
+    <string name="estado_correcto">¡Correcto!</string>
+    <string name="subtitulo_estado_correcto">Has seleccionado la opción correcta</string>
+
+    <string name="estado_incorrecto">¡Incorrecto!</string>
+    <string name="subtitulo_estado_incorrecto">Has seleccionado la opción incorrecta</string>
+
+    <string name="estado_finalizado">¡Finalizado!</string>
+    <string name="subtitulo_estado_finalizado">Has finalizado el Quiz</string>
 </resources>

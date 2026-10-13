@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/quizzesMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuizzMainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/barra_encabezado"
+        app:title="@string/texto_toast"
+        app:titleTextColor="@color/cardview_light_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+        android:id="@+id/contenedor_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gris_claro"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/texto_progreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="1 / 3" />
+
+        <ProgressBar
+            android:id="@+id/barra_progreso"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:max="3"
+            android:progressTint="@color/colorAccent"
+            tools:progress="1" />
+
+        <TextView
+            android:id="@+id/enunciado_pregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bottom_background_light_green"
+            android:gravity="center"
+            android:padding="24dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorPrimary"
+            tools:text="¿Cuál es el verdadero nombre de Batman?" />
+
+        <RadioGroup
+            android:id="@+id/respuestas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <RadioButton
+                android:id="@+id/opcion_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_opcion"
+                android:padding="16dp"
+                android:textColorLink="@color/textColorPrimary"
+                android:textSize="18sp"
+                android:textColor="@color/textColorPrimary"
+                tools:text="Opcion A" />
+
+            <RadioButton
+                android:id="@+id/opcion_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_opcion"
+                android:padding="16dp"
+                android:textColorLink="@color/textColorPrimary"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp"
+                tools:text="Opcion B" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/vista_vacia"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/boton_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/texto_boton_enviar"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

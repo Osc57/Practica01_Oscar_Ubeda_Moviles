@@ -7,4 +7,6 @@
     <color name="textColorPrimary">#000000</color>
     <color name="colorDogActivity">#07A407</color>
     <color name="colorYellowSuperHero">#FFEB3B</color>
+    <color name="colorVerdeDelLogin">#c0f6f3</color>
+    <color name="gris_claro">#F5F7F8</color>
 </resources>
